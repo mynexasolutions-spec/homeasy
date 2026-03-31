@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}ArcticCool – AC & Appliance Services Bangalore{% endblock %}</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/favicon/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicon/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ url_for('static', filename='images/favicon/site.webmanifest') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon/favicon.ico') }}">
+    
+    <title>{% block title %}Air Cool Tech Services – AC & Appliance Support Bangalore{% endblock %}</title>
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -14,6 +20,14 @@
     {% block extra_head %}{% endblock %}
 </head>
 <body>
+
+    <div class="top-bar">
+        <span>📞 Call for urgent service: <strong>+91 80 1234 5678</strong></span>
+        <span class="tb-sep">|</span>
+        <span>Same Day Services</span>
+        <span class="tb-sep">|</span>
+        <span>Bangalore</span>
+    </div>
 
     {% include 'includes/navbar.html' %}
 

@@ -1,4 +1,17 @@
-window.addEventListener('scroll',()=>{document.getElementById('nb').classList.toggle('bg',scrollY>10)});
+function updateNavbarState(){
+    const nav = document.getElementById('nb');
+    if(!nav) return;
+
+    const isHomePage = window.location.pathname === '/';
+    const shouldUseSolidNav = window.scrollY > 10 || window.innerWidth <= 768 || !isHomePage;
+
+    nav.classList.toggle('bg', shouldUseSolidNav);
+}
+
+window.addEventListener('scroll', updateNavbarState);
+window.addEventListener('resize', updateNavbarState);
+window.addEventListener('DOMContentLoaded', updateNavbarState);
+
 function toggleMenu(){document.getElementById('mm').classList.toggle('open')}
 function closeMM(){document.getElementById('mm').classList.remove('open')}
 function submitForm(){alert('Thank you! Your booking request has been received.\nOur team will call you within 30 minutes to confirm your appointment.')}
