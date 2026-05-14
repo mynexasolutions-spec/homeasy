@@ -197,6 +197,8 @@ nav.bg{background:rgba(230, 247, 241, 0.96);backdrop-filter:blur(20px);box-shado
 .f-group input, .f-group select, .f-group textarea,
 .fg input, .fg select, .fg textarea{
   width:100%;
+  max-width:100%;
+  box-sizing:border-box;
   background:var(--warm);
   border:1px solid var(--border);
   padding:16px 20px;
