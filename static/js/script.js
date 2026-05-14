@@ -27,7 +27,7 @@ function submitToWhatsapp() {
         return;
     }
     
-    const message = `*ArcticCool Booking Request*\n\n` +
+    const message = `*Best Cool Care Booking Request*\n\n` +
                     `*Name:* ${name}\n` +
                     `*Phone:* ${phone}\n` +
                     `*Area:* ${area}\n` +
@@ -35,9 +35,17 @@ function submitToWhatsapp() {
                     `Please confirm my booking.`;
                     
     const encoded = encodeURIComponent(message);
-    const waUrl = `https://wa.me/918012345678?text=${encoded}`;
+    const waUrl = `https://wa.me/917060287093?text=${encoded}`;
     
     window.location.href = waUrl;
+}
+
+// TESTIMONIAL SCROLL
+function scrollTestimonials(dir) {
+    const grid = document.getElementById('testiGrid');
+    if(!grid) return;
+    const cardWidth = grid.querySelector('.tc').offsetWidth + 24;
+    grid.scrollBy({ left: cardWidth * dir, behavior: 'smooth' });
 }
 
 // MODAL LOGIC

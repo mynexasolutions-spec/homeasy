@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 
-{% block title %}Contact Us – Air Cool Tech Services Bangalore{% endblock %}
+{% block title %}Contact Us – Best Cool Care Kochi, Kerala{% endblock %}
 
 {% block content %}
 
 <!-- BANNER -->
 <section class="cont-banner">
-  <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=80&fit=crop" alt="Contact Us" class="cnt-bg">
+  <img src="{{ url_for('static', filename='images/AC repair 2.webp') }}" alt="Contact Best Cool Care" class="cnt-bg">
   <h1 class="cnt-ttl">Contact Us</h1>
 </section>
 
@@ -18,29 +18,25 @@
       <h2 class="h2">Visit our headquarters or reach out directly</h2>
       
       <div class="cont-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248849.886539092!2d77.4908545!3d12.9538477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1711920000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.356263590059!2d76.29955197587635!3d9.9873428732153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba65d666d987625%3A0x6b772c9a941657c7!2sPalarivattom%2C%20Kochi%2C%20Kerala!5e0!3m2!1sen!2sin!4v1715640000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
       </div>
 
       <div class="soc-grid">
         <a href="#" class="soc-card">
           <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" class="sc-ico">
           <div class="sc-n">Instagram</div>
-          <div class="sc-u">@aircooltech_services</div>
+          <div class="sc-u">@bestcoolcare_kochi</div>
         </a>
         <a href="#" class="soc-card">
           <img src="https://cdn-icons-png.flaticon.com/512/174/174848.png" alt="Facebook" class="sc-ico">
           <div class="sc-n">Facebook</div>
-          <div class="sc-u">fb.com/aircooltech</div>
+          <div class="sc-u">fb.com/bestcoolcare</div>
         </a>
-        <a href="#" class="soc-card">
-          <img src="https://cdn-icons-png.flaticon.com/512/174/174883.png" alt="YouTube" class="sc-ico">
-          <div class="sc-n">YouTube</div>
-          <div class="sc-u">Air Cool Tech TV</div>
-        </a>
-        <a href="https://wa.me/918012345678" class="soc-card">
+
+        <a href="https://wa.me/917060287093" class="soc-card">
           <img src="https://cdn-icons-png.flaticon.com/512/5968/5968841.png" alt="WhatsApp" class="sc-ico">
           <div class="sc-n">WhatsApp</div>
-          <div class="sc-u">+91 80 1234 5678</div>
+          <div class="sc-u">+91 70602 87093</div>
         </a>
       </div>
     </div>
@@ -48,7 +44,7 @@
     <div class="cont-r rv-r" style="background:var(--white); padding:48px; border-radius:32px; box-shadow:var(--sh2); border:1px solid var(--border)">
       <div class="lbl">Inquiry Form</div>
       <h2 class="h2" style="font-size:2.2rem; margin:12px 0 24px">Book Your Slot</h2>
-      <p class="body" style="margin-bottom:32px">Fill in your details for a 2-hour rapid response service any locality in Bangalore.</p>
+      <p class="body" style="margin-bottom:32px">Fill in your details for a 2-hour rapid response service any locality in Kochi.</p>
       
       <div class="f-group">
         <label>Your Full Name</label>
@@ -60,18 +56,18 @@
       </div>
       <div class="f-group">
         <label>Select Locality</label>
-        <div class="f-sel-w">
-          <select id="cArea">
-            <option value="">Select Area in Bangalore</option>
-            <option>Indiranagar</option>
-            <option>Whitefield</option>
-            <option>Koramangala</option>
-            <option>Jayanagar</option>
-            <option>Electronic City</option>
-            <option>HSR Layout</option>
-            <option>Other / Not Listed</option>
-          </select>
-        </div>
+        <select id="cArea">
+          <option value="">Select Area in Kochi</option>
+          <option value="Edappally">Edappally</option>
+          <option value="Kakkanad">Kakkanad</option>
+          <option value="Palarivattom">Palarivattom</option>
+          <option value="Vyttila">Vyttila</option>
+          <option value="Aluva">Aluva</option>
+          <option value="Kalamassery">Kalamassery</option>
+          <option value="Panampilly Nagar">Panampilly Nagar</option>
+          <option value="Tripunithura">Tripunithura</option>
+          <option value="Others">Others</option>
+        </select>
       </div>
       <div class="f-group">
         <label>Service / Problem Details</label>
@@ -85,7 +81,7 @@
           <div style="width:44px; height:44px; background:var(--frost); border-radius:50%; display:flex; align-items:center; justify-content:center; color:var(--sky)">📍</div>
           <div>
             <div style="font-weight:700; font-size:0.9rem">Main Office</div>
-            <div style="font-size:0.84rem; color:var(--muted)">Indiranagar, Bangalore — 560 038</div>
+            <div style="font-size:0.84rem; color:var(--muted)">Palarivattom, Kochi — 682 025</div>
           </div>
         </div>
         <div style="display:flex; gap:20px; align-items:center; margin-top:20px">

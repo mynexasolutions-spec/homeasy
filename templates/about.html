@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 
-{% block title %}About Us – Air Cool Tech Services Bangalore{% endblock %}
+{% block title %}About Us – Best Cool Care Kochi, Kerala{% endblock %}
 
 {% block content %}
 
 <!-- BANNER -->
 <section class="about-banner">
-  <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=80&fit=crop" alt="Air Cool Tech Team" class="ab-bg">
+  <img src="{{ url_for('static', filename='images/AC repair 2.webp') }}" alt="Best Cool Care Kochi" class="ab-bg" fetchpriority="high">
   <h1 class="ab-ttl">About Us</h1>
 </section>
 
@@ -21,9 +21,9 @@
   <div class="ai-grid">
     <div class="ai-l rv-l">
       <div class="lbl">Our History</div>
-      <h2 class="h2">Pioneering standard excellence in Bangalore since 2010</h2>
-      <p class="body">Air Cool Tech Services started with a simple mission: to provide the most reliable, honest, and expert appliance repair services to every home and office in Bangalore. Over the last 15 years, we have grown from a small operation into a team of over 50 background-verified engineers.</p>
-      <p class="body">As home technology evolved, so did we. Today we don't just repair; we optimize. Using advanced diagnostic tools and manufacturer-authorized methods, we ensure your expensive appliances last longer and consume less energy. Our signature 2-hour response guarantee is our promise of reliability to the city of Bangalore.</p>
+      <h2 class="h2">Pioneering standard excellence in Kochi since 2010</h2>
+      <p class="body">Best Cool Care started with a simple mission: to provide the most reliable, honest, and expert appliance repair services to every home and office in Kochi. Over the last 15 years, we have grown from a small operation into a team of over 50 background-verified engineers.</p>
+      <p class="body">As home technology evolved, so did we. Today we don't just repair; we optimize. Using advanced diagnostic tools and manufacturer-authorized methods, we ensure your expensive appliances last longer and consume less energy. Our signature 2-hour response guarantee is our promise of reliability to the city of Kochi.</p>
       
       <div class="ai-stats">
         <div class="ais-item">
@@ -37,8 +37,8 @@
       </div>
     </div>
     <div class="ai-r rv-r">
-      <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&h=600&q=80&fit=crop" alt="Expert AC repair">
-      <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&q=80&fit=crop" alt="Technician checking PCB">
+      <img loading="lazy" src="{{ url_for('static', filename='images/repairing AC.webp') }}" alt="Expert AC repair">
+      <img loading="lazy" src="{{ url_for('static', filename='images/technician dispatched.webp') }}" alt="Best Cool Care technician">
     </div>
   </div>
 </section>
@@ -48,22 +48,22 @@
   <div class="sec-inner">
     <div class="sec-head center rv">
       <div class="lbl">Our Values</div>
-      <h2 class="h2">What drives Air Cool Tech</h2>
+      <h2 class="h2">What drives Best Cool Care</h2>
       <p class="body">We believe that a repair service should be as stress-free as possible. That's why we focus on three core pillars.</p>
     </div>
     <div class="why-grid" style="grid-template-columns: repeat(3, 1fr); gap: 32px">
         <div class="ais-item center" style="text-align:center">
-            <img src="https://images.unsplash.com/photo-1521791136064-7986c2923216?w=400&h=300&q=80&fit=crop" style="width:100%; border-radius:12px; margin-bottom:20px" alt="Trust">
+            <img loading="lazy" src="{{ url_for('static', filename='images/diagnosis.webp') }}" style="width:100%; border-radius:12px; margin-bottom:20px" alt="Trust">
             <h3 class="h3">Unmatched Trust</h3>
             <p class="body" style="font-size:0.9rem">Background-verified and certified technicians you can feel safe with.</p>
         </div>
         <div class="ais-item center" style="text-align:center">
-            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&q=80&fit=crop" style="width:100%; border-radius:12px; margin-bottom:20px" alt="Precision">
+            <img loading="lazy" src="{{ url_for('static', filename='images/Maintenance Services.webp') }}" style="width:100%; border-radius:12px; margin-bottom:20px" alt="Precision">
             <h3 class="h3">Precision Service</h3>
             <p class="body" style="font-size:0.9rem">Factory-trained engineers diagnostic tools for zero-error fixing.</p>
         </div>
         <div class="ais-item center" style="text-align:center">
-            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&q=80&fit=crop" style="width:100%; border-radius:12px; margin-bottom:20px" alt="Speed">
+            <img loading="lazy" src="{{ url_for('static', filename='images/ac installation.webp') }}" style="width:100%; border-radius:12px; margin-bottom:20px" alt="Speed">
             <h3 class="h3">Rapid Response</h3>
             <p class="body" style="font-size:0.9rem">A 2-hour response guarantee across all 30+ service areas.</p>
         </div>
@@ -71,45 +71,16 @@
   </div>
 </section>
 
-<!-- TEAM -->
-<section class="team-sec">
-  <div class="sec-head center rv">
-    <div class="lbl">Meet The Experts</div>
-    <h2 class="h2">The people behind the cooling</h2>
-    <p class="body">Our leadership team brings decades of collective experience in HVAC and home services.</p>
-  </div>
-  <div class="team-grid">
-    <div class="team-card rv">
-      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=480&q=80&fit=crop" alt="CEO" class="team-img">
-      <div class="team-n">Sandeep Kumar</div>
-      <div class="team-r">Founder & Director</div>
-    </div>
-    <div class="team-card rv">
-      <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=480&q=80&fit=crop" alt="COO" class="team-img">
-      <div class="team-n">Priya Sharma</div>
-      <div class="team-r">Head of Operations</div>
-    </div>
-    <div class="team-card rv">
-      <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=480&q=80&fit=crop" alt="Technical lead" class="team-img">
-      <div class="team-n">Vikram Rao</div>
-      <div class="team-r">Technical Lead</div>
-    </div>
-    <div class="team-card rv">
-      <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=480&q=80&fit=crop" alt="Service Manager" class="team-img">
-      <div class="team-n">Kavitha Pillai</div>
-      <div class="team-r">CS Manager</div>
-    </div>
-  </div>
-</section>
+
 
 <!-- CTA -->
 <section class="about-cta rv">
   <div class="lbl" style="color:var(--sky); margin-bottom:12px">Get Started Today</div>
   <h2 class="h2">Have an appliance emergency or need a regular checkup?</h2>
-  <p class="body">Experience the Air Cool Tech Services difference. Expert technicians are ready to assist you anywhere in Bangalore.</p>
+  <p class="body">Experience the Best Cool Care difference. Expert technicians are ready to assist you anywhere in Kochi.</p>
   <div class="hero-ctas" style="justify-content:center">
     <a href="/#contact" class="btn btn-sky">Book a Service Now</a>
-    <a href="tel:+918012345678" class="btn btn-ghost">Call Support</a>
+    <a href="tel:+917060287093" class="btn btn-ghost">Call Support</a>
   </div>
 </section>
 

@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 
-{% block title %}Our Services – Air Cool Tech Services Bangalore{% endblock %}
+{% block title %}Our Services – Best Cool Care Kochi, Kerala{% endblock %}
 
 {% block content %}
 
 <!-- BANNER -->
 <section class="srv-banner">
-  <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=80&fit=crop" alt="Services" class="sb-bg">
+  <img src="{{ url_for('static', filename='images/AC repair 2.webp') }}" alt="Best Cool Care Services" class="sb-bg" fetchpriority="high">
   <h1 class="sb-ttl">Our Services</h1>
 </section>
 
@@ -14,11 +14,11 @@
 <div id="cooling" class="srv-sec">
   <div class="srv-row">
     <div class="srv-item">
-        <div class="srv-img-w rv-l"><img src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?w=900&q=80&fit=crop" alt="Split AC" class="srv-img"></div>
+        <div class="srv-img-w rv-l"><img loading="lazy" src="{{ url_for('static', filename='images/services/Split & Window Air Conditioners.webp') }}" alt="Split AC" class="srv-img"></div>
         <div class="srv-txt rv-r">
         <div class="lbl">Expert Cooling</div>
         <h3 class="srv-ttl">Split & Window Air Conditioners</h3>
-        <p class="srv-desc">From annual deep cleaning to complex PCB repairs and gas refills, we provide end-to-end support for all residential AC brands in Bangalore.</p>
+        <p class="srv-desc">From annual deep cleaning to complex PCB repairs and gas refills, we provide end-to-end support for all residential AC brands in Kochi.</p>
         <ul class="srv-points">
             <li>Chemical Jet Wash</li>
             <li>Gas Refill (Eco Friendly)</li>
@@ -28,14 +28,14 @@
             <li>Copper Piping Fix</li>
         </ul>
         <a href="/#contact" class="btn btn-sky">Book Now</a>
-        <a href="https://wa.me/918012345678" class="btn btn-outline" style="margin-left:12px">WhatsApp</a>
+        <a href="https://wa.me/917060287093" class="btn btn-outline" style="margin-left:12px">WhatsApp</a>
         </div>
     </div>
   </div>
 
   <div class="srv-row">
     <div class="srv-item rev">
-        <div class="srv-img-w rv-r"><img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=900&q=80&fit=crop" alt="Cassette AC" class="srv-img"></div>
+        <div class="srv-img-w rv-r"><img loading="lazy" src="{{ url_for('static', filename='images/services/Cassette Air Conditioners.webp') }}" alt="Cassette AC" class="srv-img"></div>
         <div class="srv-txt rv-l">
         <div class="lbl">Aesthetic Cooling</div>
         <h3 class="srv-ttl">Cassette AC Maintenance</h3>
@@ -49,14 +49,14 @@
             <li>Noise Dampening</li>
         </ul>
         <a href="/#contact" class="btn btn-sky">Book Now</a>
-        <a href="https://wa.me/918012345678" class="btn btn-outline" style="margin-left:12px">WhatsApp</a>
+        <a href="https://wa.me/917060287093" class="btn btn-outline" style="margin-left:12px">WhatsApp</a>
         </div>
     </div>
   </div>
 
   <div class="srv-row">
     <div class="srv-item">
-        <div class="srv-img-w rv-l"><img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&q=80&fit=crop" alt="VRV AC" class="srv-img"></div>
+        <div class="srv-img-w rv-l"><img loading="lazy" src="{{ url_for('static', filename='images/services/VRV VRF Commercial AC.jpg') }}" alt="VRV AC" class="srv-img"></div>
         <div class="srv-txt rv-r">
         <div class="lbl">Industrial Grade</div>
         <h3 class="srv-ttl">VRV / VRF Central Systems</h3>
@@ -70,7 +70,7 @@
             <li>Full Grid Maintenance</li>
         </ul>
         <a href="/#contact" class="btn btn-sky">Book Now</a>
-        <a href="https://wa.me/918012345678" class="btn btn-outline" style="margin-left:12px">WhatsApp</a>
+        <a href="https://wa.me/917060287093" class="btn btn-outline" style="margin-left:12px">WhatsApp</a>
         </div>
     </div>
   </div>
@@ -80,7 +80,7 @@
 <div id="washing" class="srv-sec">
   <div class="srv-row">
     <div class="srv-item rev">
-        <div class="srv-img-w rv-r"><img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=900&q=80&fit=crop" alt="Washing Machine" class="srv-img"></div>
+        <div class="srv-img-w rv-r"><img loading="lazy" src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=900&q=80&fit=crop" alt="Washing Machine" class="srv-img"></div>
         <div class="srv-txt rv-l">
         <div class="lbl">Appliance Expert</div>
         <h3 class="srv-ttl">Washing Machines</h3>
@@ -94,14 +94,14 @@
             <li>Deep Descaling</li>
         </ul>
         <a href="/#contact" class="btn btn-sky">Book Now</a>
-        <a href="https://wa.me/918012345678" class="btn btn-outline" style="margin-left:12px">WhatsApp</a>
+        <a href="https://wa.me/917060287093" class="btn btn-outline" style="margin-left:12px">WhatsApp</a>
         </div>
     </div>
   </div>
 
   <div id="refrigerator" class="srv-row">
     <div class="srv-item">
-        <div class="srv-img-w rv-l"><img src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=900&q=80&fit=crop" alt="Refrigerator" class="srv-img"></div>
+        <div class="srv-img-w rv-l"><img loading="lazy" src="{{ url_for('static', filename='images/services/Refrigerator Repair.webp') }}" alt="Refrigerator" class="srv-img"></div>
         <div class="srv-txt rv-r">
         <div class="lbl">Freshness Check</div>
         <h3 class="srv-ttl">Refrigerator & Freezers</h3>
@@ -115,14 +115,14 @@
             <li>Gasket Replacement</li>
         </ul>
         <a href="/#contact" class="btn btn-sky">Book Now</a>
-        <a href="https://wa.me/918012345678" class="btn btn-outline" style="margin-left:12px">WhatsApp</a>
+        <a href="https://wa.me/917060287093" class="btn btn-outline" style="margin-left:12px">WhatsApp</a>
         </div>
     </div>
   </div>
 
   <div id="microwave" class="srv-row">
     <div class="srv-item rev">
-        <div class="srv-img-w rv-r"><img src="https://images.unsplash.com/photo-1574265353392-a9b70b55502c?w=900&q=80&fit=crop" alt="Microwave" class="srv-img"></div>
+        <div class="srv-img-w rv-r"><img loading="lazy" src="{{ url_for('static', filename='images/services/Microwave Repair.webp') }}" alt="Microwave" class="srv-img"></div>
         <div class="srv-txt rv-l">
         <div class="lbl">Smart Kitchen</div>
         <h3 class="srv-ttl">Microwave Oven Repair</h3>
@@ -136,14 +136,14 @@
             <li>Radiation Safety Check</li>
         </ul>
         <a href="/#contact" class="btn btn-sky">Book Now</a>
-        <a href="https://wa.me/918012345678" class="btn btn-outline" style="margin-left:12px">WhatsApp</a>
+        <a href="https://wa.me/917060287093" class="btn btn-outline" style="margin-left:12px">WhatsApp</a>
         </div>
     </div>
   </div>
 
   <div id="geyser" class="srv-row">
     <div class="srv-item">
-        <div class="srv-img-w rv-l"><img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=900&q=80&fit=crop" alt="Geyser" class="srv-img"></div>
+        <div class="srv-img-w rv-l"><img loading="lazy" src="{{ url_for('static', filename='images/services/Geyser & Water Heater.webp') }}" alt="Geyser" class="srv-img"></div>
         <div class="srv-txt rv-r">
         <div class="lbl">Hot Water Flow</div>
         <h3 class="srv-ttl">Geyser & Water Heaters</h3>
@@ -157,7 +157,7 @@
             <li>Copper Tank Repair</li>
         </ul>
         <a href="/#contact" class="btn btn-sky">Book Now</a>
-        <a href="https://wa.me/918012345678" class="btn btn-outline" style="margin-left:12px">WhatsApp</a>
+        <a href="https://wa.me/917060287093" class="btn btn-outline" style="margin-left:12px">WhatsApp</a>
         </div>
     </div>
   </div>
@@ -167,10 +167,10 @@
 <section class="about-cta rv">
   <div class="lbl" style="color:var(--sky); margin-bottom:12px">24/7 Priority Support</div>
   <h2 class="h2">Expert repairs are just a click away</h2>
-  <p class="body" style="max-width:550px">Our certified engineers are currently operating across all Bangalore major localities with a 2-hour rapid response guarantee.</p>
+  <p class="body" style="max-width:550px">Our certified engineers are currently operating across all Kochi major localities with a 2-hour rapid response guarantee.</p>
   <div class="hero-ctas" style="justify-content:center">
     <a href="/#contact" class="btn btn-sky">Book Now</a>
-    <a href="tel:+918012345678" class="btn btn-ghost">Call +91 80 1234 5678</a>
+    <a href="tel:+917060287093" class="btn btn-ghost">Call +91 70602 87093</a>
   </div>
 </section>
 
