@@ -191,7 +191,8 @@ nav.bg{background:rgba(230, 247, 241, 0.96);backdrop-filter:blur(20px);box-shado
 .sc-n{font-size:0.92rem;font-weight:700;color:var(--navy)}
 .sc-u{font-size:0.78rem;color:var(--muted)}
 
-/* GLOBAL FORMS */
+/* GLOBAL STYLES */
+.why-grid-v{display:grid;grid-template-columns:repeat(3, 1fr);gap:32px}
 .f-group, .fg{margin-bottom:24px}
 .f-group label, .fg label{display:block;font-size:0.75rem;font-weight:800;color:var(--navy);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:10px}
 .f-group input, .f-group select, .f-group textarea,
@@ -243,7 +244,7 @@ nav.bg{background:rgba(230, 247, 241, 0.96);backdrop-filter:blur(20px);box-shado
 .srv-img{width:100%;height:460px;object-fit:cover;border-radius:32px;box-shadow:var(--sh3)}
 .srv-txt{padding:0 20px}
 .srv-ttl{font-family:var(--fh);font-size:2.8rem;color:var(--navy);margin-bottom:20px;line-height:1.2}
-.srv-desc{font-size:1.05rem;line-height:1.8;color:var(--muted);margin-bottom:32px}
+@media(max-width:768px){.nav-logo{font-size:1.45rem}}.srv-desc{line-height:1.8;color:var(--muted);margin-bottom:32px}
 .srv-points{list-style:none;margin-bottom:40px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .srv-points li{position:relative;padding-left:26px;font-size:0.94rem;font-weight:700;color:var(--navy)}
 .srv-points li::before{content:'✓';position:absolute;left:0;color:var(--green);font-weight:900}
@@ -538,7 +539,7 @@ footer{background:var(--navy2);color:rgba(255,255,255,.6);padding:66px 6% 26px}
   nav{top:0;height:74px;padding:0 12px;width:100%;max-width:100vw;overflow:hidden}
   nav{background:rgba(247,245,240,0.96);backdrop-filter:blur(20px);box-shadow:0 1px 0 var(--border)}
   .nav-logo{gap:10px;min-width:0;flex:1 1 auto;max-width:none}
-  .nav-wordmark{font-size:1.1rem;line-height:1.15;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-left:0;display:block;max-width:100%}
+  .nav-wordmark{font-size:1.35rem;font-weight:900;line-height:1.15;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-left:0;display:block;max-width:100%}
   .nav-logo img{width:46px;height:46px}
   .nav-links,.nav-right{display:none}
   .hamburger{display:flex;flex-shrink:0;margin-left:8px}
@@ -559,6 +560,7 @@ footer{background:var(--navy2);color:rgba(255,255,255,.6);padding:66px 6% 26px}
   .form-row{grid-template-columns:1fr}
   .why-exp{left:8px;top:8px}
   .why-accent{width:125px;height:125px}
+  .why-grid-v{display:grid;grid-template-columns:1fr;gap:40px}
   .about-banner,.cont-banner,.srv-banner{margin-top:74px;height:300px}
   .gal-bento{grid-template-columns:1fr 1fr}
   .cov-cap{right:10px;bottom:10px}
