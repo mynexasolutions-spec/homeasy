@@ -12,6 +12,12 @@ window.addEventListener('scroll', updateNavbarState);
 window.addEventListener('resize', updateNavbarState);
 window.addEventListener('DOMContentLoaded', updateNavbarState);
 
+window.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('img').forEach(img => {
+        img.decoding = 'async';
+    });
+});
+
 function toggleMenu(){document.getElementById('mm').classList.toggle('open')}
 function closeMM(){document.getElementById('mm').classList.remove('open')}
 function submitForm(){alert('Thank you! Your booking request has been received.\nOur team will call you within 30 minutes to confirm your appointment.')}
