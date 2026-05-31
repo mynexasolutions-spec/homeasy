@@ -65,7 +65,7 @@ nav.bg{background:rgba(230, 247, 241, 0.96);backdrop-filter:blur(20px);box-shado
 .mob-menu.open a:nth-child(4){transition-delay:0.2s}
 .mob-menu.open a:nth-child(5){transition-delay:0.25s}
 .mob-menu.open a:nth-child(6){transition-delay:0.3s}
-.mob-menu .btn{width:100%;max-width:320px;padding:20px;margin-top:20px;font-size:1.1rem;justify-content:center}
+.mob-menu .btn{width:100%;max-width:320px;padding:20px;margin-top:20px;font-size:1.1rem;justify-content:center;color:#fff}
 .mm-close{position:absolute;top:24px;right:24px;width:48px;height:48px;display:grid;place-items:center;font-size:1.8rem;color:var(--navy);cursor:pointer;border-radius:50%;background:var(--warm)}
 
 /* HERO */
