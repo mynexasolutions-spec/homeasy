@@ -41,7 +41,7 @@ function submitToWhatsapp() {
                     `Please confirm my booking.`;
                     
     const encoded = encodeURIComponent(message);
-    const waUrl = `https://wa.me/917060287093?text=${encoded}`;
+    const waUrl = `https://wa.me/918891559197?text=${encoded}`;
     
     window.location.href = waUrl;
 }
@@ -118,3 +118,42 @@ function closeModal() {
 const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')})},{threshold:.07,rootMargin:'0px 0px -28px 0px'});
 document.querySelectorAll('.rv,.rv-l,.rv-r').forEach(el=>obs.observe(el));
 document.querySelectorAll('.svc-grid,.testi-grid,.amc-grid,.proc-grid').forEach(g=>{Array.from(g.children).forEach((c,i)=>c.style.transitionDelay=(i*.1)+'s')});
+
+// CONTACT POPUP LOGIC
+setTimeout(() => {
+    const popup = document.getElementById('contactModalOverlay');
+    if(popup) {
+        popup.classList.add('active');
+    }
+}, 5000);
+
+function closeContactModal() {
+    const popup = document.getElementById('contactModalOverlay');
+    if(popup) {
+        popup.classList.remove('active');
+    }
+}
+
+function submitPopupToWhatsapp() {
+    const name = document.getElementById('pName').value;
+    const phone = document.getElementById('pPhone').value;
+    const area = document.getElementById('pArea').value;
+    const details = document.getElementById('pDetails').value;
+    
+    if(!name || !phone || !area) {
+        alert('Please fill in Your Name, Phone Number, and Area.');
+        return;
+    }
+    
+    const message = `*Best Cool Care Booking Request*\n\n` +
+                    `*Name:* ${name}\n` +
+                    `*Phone:* ${phone}\n` +
+                    `*Area:* ${area}\n` +
+                    `*Details:* ${details || 'N/A'}\n\n` +
+                    `Please confirm my booking.`;
+                    
+    const encoded = encodeURIComponent(message);
+    const waUrl = `https://wa.me/918891559197?text=${encoded}`;
+    
+    window.location.href = waUrl;
+}

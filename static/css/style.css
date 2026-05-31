@@ -628,5 +628,33 @@ footer{background:var(--navy2);color:rgba(255,255,255,.6);padding:66px 6% 26px}
   .announce{height:50px}
   .ann-item{padding:0 18px;font-size:.84rem;gap:8px}
   .fb-logo-wrap{padding:9px 10px}
-  .fb-img{height:54px;max-width:154px}
 }
+
+/* FOLLOW US SECTION */
+.follow-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:20px}
+.follow-card{display:flex;align-items:center;padding:24px;border-radius:24px;color:#fff;text-decoration:none;transition:transform 0.3s,box-shadow 0.3s;position:relative;overflow:hidden;gap:16px}
+.follow-card:hover{transform:translateY(-6px);box-shadow:var(--sh3)}
+.inst-card{background:linear-gradient(135deg,#b12f76 0%,#f05053 50%,#f59e0b 100%)}
+.wa-card{background:linear-gradient(135deg,#128c7e 0%,#25d366 100%)}
+.fc-ico{width:64px;height:64px;background:rgba(255,255,255,0.2);border-radius:18px;display:grid;place-items:center;flex-shrink:0}
+.fc-ico svg{width:36px;height:36px}
+.fc-body{flex-grow:1;display:flex;flex-direction:column;gap:4px}
+.fc-lbl{font-size:0.75rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;opacity:0.9}
+.fc-handle{font-size:1.3rem;font-weight:800;font-family:var(--fh)}
+.fc-desc{font-size:0.85rem;opacity:0.9;line-height:1.4}
+.fc-arr{width:40px;height:40px;background:rgba(255,255,255,0.2);border-radius:50%;display:grid;place-items:center;flex-shrink:0;transition:background 0.3s}
+.follow-card:hover .fc-arr{background:rgba(255,255,255,0.3)}
+
+@media(max-width:768px){
+  .follow-grid{grid-template-columns:1fr}
+}
+
+@media(max-width: 480px) {
+  #contactModalOverlay .cf-box {
+    padding: 24px 20px !important;
+  }
+  #contactModalOverlay .cf-title {
+    font-size: 1.3rem;
+  }
+}
+
