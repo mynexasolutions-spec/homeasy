@@ -509,6 +509,8 @@ nav.bg{background:rgba(230, 247, 241, 0.96);backdrop-filter:blur(20px);box-shado
 .fg textarea{resize:vertical;min-height:90px}
 .btn-form{width:100%;padding:18px;border-radius:50px;background:var(--sky);color:#fff;font-family:var(--fh);font-size:1.05rem;font-weight:700;cursor:pointer;border:none;transition:.22s;box-shadow:0 10px 20px -10px var(--sky);justify-content:center;display:flex;align-items:center}
 .btn-form:hover{background:var(--sky2);transform:translateY(-2px);box-shadow:0 15px 30px -10px var(--sky)}
+.btn-form-navy{background:var(--navy);box-shadow:0 10px 20px -10px var(--navy)}
+.btn-form-navy:hover{background:var(--sky);box-shadow:0 15px 30px -10px var(--navy)}
 
 /* FOOTER */
 footer{background:var(--navy2);color:rgba(255,255,255,.6);padding:66px 6% 26px}
